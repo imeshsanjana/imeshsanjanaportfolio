@@ -1,0 +1,375 @@
+* {
+  font-family: open sans;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: black;
+  --secondary-color: rgb(57, 99, 250);
+  --button-color: rgb(56, 86, 235);
+  --border-color: black;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  border: 3px transparent black;
+  position: fixed;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  z-index: 1000;
+}
+
+nav ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+nav ul li a {
+  border-top: 2px solid rgb(255, 106, 0);
+  border-right: 2px solid rgb(0, 72, 255);
+  border-bottom: 2px solid rgb(0, 255, 106);
+  border-left: 0px solid white;
+  padding: 9px;
+  font-size: 1.5rem;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  text-decoration-color: red;
+}
+
+nav ul :hover {
+  /*transform: translateY(-5px);*/
+  background-color: transparent;
+  transition: 0.7s linear;
+  text-decoration: underline solid red 2px;
+}
+
+.main {
+  height: 100vh;
+  z-index: -10;
+  transform: translateY(70px);
+  background-color: red;
+  background-image: url(1567679.jpg);
+  background-size: cover;
+  transition: 0.2s linear;
+}
+
+
+
+.content h1 {
+  align-items: center;
+  justify-content: center;
+  font-size: 6.8rem;
+  transform: translateY(110px);
+  text-transform: capitalize;
+  animation: typing 2.5s steps(500) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  padding-left: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.main a {
+  background-color: rgb(0, 0, 255);
+  font-size: 2rem;
+  padding: 5px 35px;
+  margin: 0.5px;
+  color: white;
+  border-radius: 1rem;
+  border: 3px solid white;
+}
+
+
+.btn {
+  transform: translateY(210px);
+  width: fit-content;
+  animation: jump 0.4s steps(500) infinite alternate;
+  text-transform: capitalize;
+}
+
+@keyframes jump {
+  form {
+    transform: translateY(210px);
+  }
+
+  to {
+    transform: translateY(213px);
+  }
+}
+
+.hover:hover {
+  transform: translateY(-5px);
+}
+
+.tt {
+  transform: translateX(50px);
+}
+
+.color :hover {
+  background-image: linear-gradient(to right, blue, skyblue);
+}
+
+.about {
+  height: 100vh;
+  background-color: purple;
+  transform: translateY(5px);
+  position: sticky;
+  background-image: url(1567771.jpg);
+  background-size: cover;
+  transition: 0.2s linear;
+}
+
+.about h1 {
+  transform: translateY(100px);
+  padding-left: 10px;
+  font-size: 5.8rem;
+  text-transform: capitalize;
+  color: black;
+  animation: typing 2.5s steps(1000) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+@keyframes {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.paragraph {
+  transform: translateY(550%);
+  border: 2px solid transparent;
+  width: 50%;
+  height: 40px;
+  justify-content: end;
+  text-align: end;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@keyframes {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+
+.cen {
+  transform: translateX(100%);
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  border-bottom-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  transform: translateY(150px);
+  margin-left: 200px;
+  scale: 110%;
+  animation: fade 0.5s steps(1000) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes fade {
+  form {
+    transform: translateY(150px);
+  }
+
+  to {
+    transform: translateY(155px);
+  }
+}
+
+.work {
+  height: 100vh;
+  background-image: url(1347419.jpg);
+  background-size: cover;
+  transition: 0.2s linear;
+}
+
+.works_load h1 {
+  font-size: 5rem;
+  color: brown;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: typing 6s steps(1000) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 25px;
+}
+
+.works_load h2 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: typing 6s steps(1000) infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: ;
+  transform: translateX(0px);
+}
+
+.list {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(200px);
+}
+
+.list ul {
+  border: 2px solid transparent;
+  transform: translateY(100px);
+  list-style: circle;
+
+}
+
+.list ul li {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  animation: typing 2.5s steps(1000) alternate;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+@keyframes {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.contact {
+  height: 100vh;
+  background-image: url(1567796.png);
+  background-size: cover;
+  transition: 0.2s linear;
+}
+
+.contact h1 {
+  color: white;
+  justify-content: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.social {
+  height: 40px;
+  width: 75%;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: 180px;
+  top: 80px;
+  display: flex;
+  gap: 60px;
+}
+
+.social .bx {
+  font-size: 7rem;
+  justify-content: space-between;
+  transition: 0.2s linear;
+}
+
+.bx:hover {
+  transform: scale(1.2);
+  /* Slightly enlarge the icon on hover */
+}
+
+.contact h3 {
+  position: relative;
+  top: 400px;
+  left: 42%;
+  font-size: 4rem;
+  color: white;
+}
+
+.email_button {
+  border: 3px solid rgb(255, 255, 255);
+  width: fit-content;
+  padding: 10px 65px;
+  background-color: blue;
+  border-radius: 1rem;
+  position: relative;
+  top: 60.5%;
+  left: 38.5%;
+}
+
+.email_button h4 {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  animation: opacity 1s steps(50) infinite alternate;
+}
+
+@keyframes opacity{
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
